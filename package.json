@@ -1,0 +1,25 @@
+{
+  "name": "npm-pkg-version",
+  "version": "1.0.0",
+  "description": "Return the details of parameter package name",
+  "main": "npm-pkg-version.js",
+  "scripts": {
+    "test": "jest",
+    "test-coverage": "jest --collectCoverage"
+  },
+  "author": "Geoffrey Gourlez",
+  "license": "ISC",
+  "jest": {
+    "setupFiles": [
+      "./setupJest.js"
+    ]
+  },
+  "dependencies": {
+    "https-proxy-agent": "^3.0.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "jest": "25.2.7",
+    "jest-fetch-mock": "3.0.3"
+  }
+}
