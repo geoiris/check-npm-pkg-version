@@ -183,6 +183,11 @@ Result :  [
 ]
 ```
 
+## TODO
+
+-   Case insensitive module name ?
+-   ...
+
 ## Thank for read
 
 I hope this package help you. I will try to check your comments (if you comment...)
