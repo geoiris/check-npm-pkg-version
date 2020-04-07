@@ -1,4 +1,4 @@
-const npv = require('./npm-pkg-version');
+const npv = require('./check-npm-pkg-version');
 const npmlodashmock = require('./mock/npmregistry_lodash_mock.json');
 const otherregistrylodashmock = require('./mock/otherregistry_lodash_mock.json');
 const fetch = require('node-fetch');

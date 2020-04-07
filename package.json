@@ -1,8 +1,8 @@
 {
-  "name": "npm-pkg-version",
+  "name": "check-npm-pkg-version",
   "version": "1.0.0",
   "description": "Return the details of parameter package name",
-  "main": "npm-pkg-version.js",
+  "main": "check-npm-pkg-version.js",
   "scripts": {
     "test": "jest",
     "test-coverage": "jest --collectCoverage"

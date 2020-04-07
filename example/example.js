@@ -1,4 +1,4 @@
-const npv = require('../npm-pkg-version');
+const npv = require('../check-npm-pkg-version');
 
 async function checkVersion(name, actualVersion) {
 	let result = await npv(name, { proxy: 'http://127.0.0.1:5000' });

@@ -1,4 +1,4 @@
-# npm-pkg-version
+# check-npm-pkg-version
 
 This package is made to help you to verify the latest version of one specific package by code.
 
@@ -9,13 +9,13 @@ My original problem, i have an app who check many things in a specified git repo
 With npm
 
 ```
-npm install npm-pkg-version
+npm install check-npm-pkg-version
 ```
 
 or yarn
 
 ```
-yarn add npm-pkg-version
+yarn add check-npm-pkg-version
 ```
 
 ## Use the module
@@ -23,16 +23,16 @@ yarn add npm-pkg-version
 first time, add the module in your code :
 
 ```
-const npv = require('npm-pkg-version')
+const npv = require('check-npm-pkg-version')
 ```
 
 After, just use it with the package name that you want check, example :
 
 ```
-let result = await npv('npm-pkg-version');
+let result = await npv('check-npm-pkg-version');
 ```
 
-The npm-pkg-version function return a promise. This promise was mage by node-fetch lib to call the npm registry API for find your search. So, i don't manage node-fetch return, you have to check the result by yourself.
+The check-npm-pkg-version function return a promise. This promise was mage by node-fetch lib to call the npm registry API for find your search. So, i don't manage node-fetch return, you have to check the result by yourself.
 
 In my example, i call npv function, and i check if the result is here. After that i call the res.json() function to convert the response in JSON and make my own control.
 
@@ -90,12 +90,12 @@ I use Jest for test my package.
 Goal : 100% coverage.
 
 ```
---------------------|---------|----------|---------|---------|-------------------
-File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
---------------------|---------|----------|---------|---------|-------------------
-All files           |     100 |      100 |     100 |     100 |
- npm-pkg-version.js |     100 |      100 |     100 |     100 |
---------------------|---------|----------|---------|---------|-------------------
+--------------------------|---------|----------|---------|---------|-------------------
+File                      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+--------------------------|---------|----------|---------|---------|-------------------
+All files                 |     100 |      100 |     100 |     100 |
+ check-npm-pkg-version.js |     100 |      100 |     100 |     100 |
+--------------------------|---------|----------|---------|---------|-------------------
 ```
 
 ## One example
